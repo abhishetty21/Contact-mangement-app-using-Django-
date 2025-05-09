@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Landing Page</title>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="min-h-screen flex flex-col justify-center items-center bg-cover bg-center" style="background-image: url('{% static "contacts/landing_bg.jpg" %}');">
+        <div class="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg text-center">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to the Contact Management App</h1>
+            <p class="text-gray-700 text-lg mb-6">Easily store, manage, and access your contacts with our app.</p>
+            <a href="{% url 'contact_list' %}" class="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white text-lg font-semibold rounded-lg shadow-md">
+                Go to Contacts
+            </a>
+        </div>
+    </div>
+</body>
+</html>
